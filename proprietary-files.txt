@@ -222,8 +222,8 @@ framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar|8ef6455540e94b25357d
 framework/vendor.qti.hardware.data.latency-V1.0-java.jar|319c79ec3b8dffc73d19d1a515936c20762e42e0
 framework/vendor.qti.hardware.data.qmi-V1.0-java.jar|94c3e0efe3bc51358fe9145ed1ff0708c262380d
 framework/vendor.qti.latency-V2.0-java.jar|9d4912be5c77d8c9683b3a81901dcc644adb8ea7
-#-priv-app/CNEService/CNEService.apk|4c6ee655fcdda500f4999ca9b3e1c028af2c8a71
-#vendor/bin/cnd|81c0f2beecb6f375b4d460adbfb739b8aa970a70
+-priv-app/CNEService/CNEService.apk|4c6ee655fcdda500f4999ca9b3e1c028af2c8a71
+vendor/bin/cnd|81c0f2beecb6f375b4d460adbfb739b8aa970a70
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml|578f3f8f56059bfdbef926bcc68d01c15e06951f
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml|1fb42c672a12b6660bdce3ea94e0c43719dd9de8
 vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml|f88e13f1dd7b82388c90358f71813026370c9ed8
@@ -276,7 +276,7 @@ vendor/lib64/vendor.qti.latency@2.0.so|15e50ce40e210993343406947dd2c959920f40c8
 # DPM - from daisy - PKQ1.180917.001
 bin/dpmd|1b38829a7faf33d5cbdc195d703f99384c20c9f4
 etc/dpm/dpm.conf|5f19d3984b5291ac956552bda2a84c10c535df0a
-#etc/init/dpmd.rc|52ca6ad920a1804e4ff608113cece063730f5e0c
+etc/init/dpmd.rc|52ca6ad920a1804e4ff608113cece063730f5e0c
 etc/permissions/com.qti.dpmframework.xml|36b94c9338069e434b83359a92cdc7ff62b822df
 etc/permissions/dpmapi.xml|ded29f9befaef20a7ccee0c75427fda1d1d04890
 framework/com.qti.dpmframework.jar|4a48456f8ed4b751135b05a99f273996bf35fd9c
@@ -287,7 +287,7 @@ lib64/libdpmctmgr.so|595449eff197e8c3bc6f7a4f0242188abe82418f
 lib64/libdpmfdmgr.so|f03869f7bee601182c545e892523d23529439e16
 lib64/libdpmframework.so|9dc137606c1cb73e3ec5a97c954df93e750dd459
 lib64/libdpmtcm.so|1f85ced85f541146756df0b4597a4c51300be63a
-#-priv-app/dpmserviceapp/dpmserviceapp.apk|a642336052f3e5d70580700e2aebba230a5f663f
+-priv-app/dpmserviceapp/dpmserviceapp.apk|a642336052f3e5d70580700e2aebba230a5f663f
 vendor/bin/dpmQmiMgr|31e019a02d25a959a2edfe2c9a04ab958562bb67
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|2af88934e4039edaac842576a1861cbdfe39838b
 vendor/lib64/libdpmqmihal.so|4254cc9f10f6f3d990958c17f4e43d8e9e09c382
@@ -398,18 +398,19 @@ vendor/lib/libRSDriver_adreno.so|c89086f8cd9b9afb7725741e6653bcf7c5efcc75
 vendor/lib64/libhdr_tm.so|7a05d56d8305c8df87392b93929949178c336b83
 vendor/lib/libhdr_tm.so|37381160c5f44f3974af22fb09f394c0fd1fd3bd
 
-# Graphics (SDM) - from LA.UM.8.6.r1-01900-89xx.0
-vendor/lib/libscalar.so|7eb9864f82f5ffeb26ba548919c4812d1412b89e
-vendor/lib/libsdm-color.so|0e9ed4076b322bd630f5a227930c7ce5acf2dccf
-vendor/lib/libsdm-diag.so|427fe7e2e23715041d35fa25cbacb7bca1803219
-vendor/lib/libsdmextension.so|b57d80c0689ed0519762ea740fa163867dfa6a7d
-vendor/lib/libtinyxml2_1.so|89a4da164dfe30fa43f0ba2de198c8de54817162
-vendor/lib64/libscalar.so|d7cb68b0c3269bc8750646cfcf659973ac97c5b1
-vendor/lib64/libsdm-color.so|364aba1e0b7a376c37b79e971d01d49063bf3c1c
-vendor/lib64/libsdm-diag.so|0a2116e2f1e310be896250053761888b2b890dc4
--vendor/lib64/libsdm-disp-vndapis.so|0289e8fd70c5401d7486ca839c931e987b0e7e9e
-vendor/lib64/libsdmextension.so|a3e3ccd22f0d0a81e70e4e2e39dc270fc94615c9
-vendor/lib64/libtinyxml2_1.so|cb6f4fb572a28cad293f4b6c5312fcff73ad088b
+# Graphics (SDM) - from op3 - PKQ1.181203.001
+vendor/lib/libscalar.so|cad128a6e71195b4ad38494bc0382bf80e1fb0b2
+vendor/lib/libsdm-color.so|b13ab5f965f5bb8f40207879415cb1adbb55da42
+vendor/lib/libsdm-diag.so|e2e3a0fba39190c58bafa0568e8cd51b391b71b6
+-vendor/lib/libsdm-disp-vndapis.so|6c4233ea3676643bc9658c25cfad7edd45c49362
+vendor/lib/libsdmextension.so|4a9b01c3d4cc625152f4c1d586e7d84f4dfeda9a
+vendor/lib/libtinyxml2_1.so|3882fddae942997be6ad6af789cf209fa45e61b3
+vendor/lib64/libscalar.so|490cc7447863b3279771ad99e92a5625525db055
+vendor/lib64/libsdm-color.so|9bb3f5147c277eae08c7f918e7de3bd2fccf1f74
+vendor/lib64/libsdm-diag.so|7ab5d2a980029ac9bd20fe68656823b21e483e11
+-vendor/lib64/libsdm-disp-vndapis.so|6ae24866bbd413ed112778650c8fd7a2631cb1a9
+vendor/lib64/libsdmextension.so|d8e738455720e4c1492fcb2f77c030aa8beaa8dd
+vendor/lib64/libtinyxml2_1.so|b743b93bbb47bb2d80322fcfb985b7b8c696fa1b
 
 # Graphics (Vulkan) - from op3 - PKQ1.181203.001
 vendor/lib/hw/vulkan.msm8996.so|55c875334793eb80e0d7177f640df1930dbe46a5
